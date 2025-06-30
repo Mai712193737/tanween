@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+
+body {
+  font-family: 'tajawal', Arial, Helvetica, sans-serif;
+  background-color: #E0CEBE;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+
+.profile-section {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  flex: 1;
+}
+
+
+.user-card {
+  background-color: rgba(255, 255, 255, 0.9);
+  border-radius: 1em;
+  padding: 2em;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  width: 300px;
+}
+
+.user-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  margin-bottom: 1em;
+  background-color: #bbb;
+}
+
+.user-name {
+  font-size: 2rem;
+  color: #333;
+  margin: 0;
+}
+
+
+.options-list {
+  margin-top: 2em;
+  width: 300px;
+}
+
+.options-list ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  font-size: 1.2rem;
+}
+
+.options-list li {
+  margin-bottom: 1em;
+  transition: background-color 0.3s ease, padding-right 0.3s ease;
+  background-color: rgba(255, 255, 255, 0.7);
+  padding: 0.5em 1em;
+  border-radius: 0.5em;
+}
+
+.options-list li:hover {
+  background-color: #fff;
+  padding-right: 1.5em;
+  border-right: 5px solid #303280;
+}
+
+.options-list a {
+  text-decoration: none;
+  color: black;
+  display: block;
+}

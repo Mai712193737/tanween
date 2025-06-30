@@ -1,0 +1,112 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+body {
+    font-family: 'Tajawal', Arial, Helvetica, sans-serif;
+    margin: 0;
+}
+
+section {
+    background: linear-gradient(rgba(58, 74, 109, 1), rgba(58, 74, 109, 0) 20% 80%, rgba(58, 74, 109, 1));
+}
+
+.search {
+    display: flex;
+    padding: 1.5rem 1rem;
+}
+
+.search-container {
+    width: 100%;
+    position: relative;
+}
+
+#search-bar {
+    padding: 0.8rem;
+    font-family: inherit;
+    border: none;
+    border-radius: 999px;
+    width: 100%;
+    box-sizing: border-box;
+    font-size: 1rem;
+    outline: 3px solid #eee;
+    transition: outline-color 0.4s;
+}
+
+#search-bar:hover {
+    outline-color: #999;
+}
+
+#search-bar:focus {
+    outline-color: orange;
+}
+
+.search-container .magnifying-glass {
+    width: 20px;
+    height: 20px;
+    position: absolute;
+    left: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    opacity: 0.5;
+}
+
+.genre-section {
+    padding: 1rem 1rem;
+}
+
+.genre-title {
+    font-size: 1.5rem;
+    color: black;
+    margin: 0;
+    padding-bottom: 0.5rem;
+    border-bottom: 2px solid #3498db;
+}
+
+.books-container {
+    display: flex;
+    gap: 1rem;
+    overflow-x: auto;
+    padding-bottom: 0.5rem;
+}
+
+.book-card {
+    display: flex;
+    min-width: 180px;
+    max-width: 180px;
+    height: 250px;
+    padding: 1rem;
+    margin: 1rem 0.5rem 0 0;
+    color: white;
+    border-radius: 5px;
+    flex-direction: column;
+    justify-content: flex-end;
+    cursor: pointer;
+    transition: transform 0.3s;
+}
+
+.book-card:hover {
+    transform: scale(1.02);
+}
+
+.book-title {
+    font-weight: bold;
+    margin-bottom: 0.5rem;
+}
+
+.book-author {
+    font-size: 1rem;
+}
+
+.view-all {
+    text-align: left;
+    margin-top: 1rem;
+}
+
+.view-all a {
+    color: #3498db;
+    font-weight: bold;
+    background-color: white;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+}

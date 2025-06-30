@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html dir="rtl" lang="ar">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>تصفح الكتب</title>
+    <link rel="stylesheet" href="/css/browse-books.css">
+    <link rel="stylesheet" href="/css/search.css">
+</head>
+
+<body>
+    <section>
+        <div class="search">
+            <div class="search-container">
+                <input type="text" id="search-bar" placeholder="ابحث عن كتاب أو مؤلف..." autocomplete="off">
+                <img class="magnifying-glass" src="/assets/icons/magnifying-glass.svg" alt="">
+                <div id="search-results" class="search-results"></div>
+            </div>
+        </div>
+        <div id="sections-container"></div>
+    </section>
+
+    <script src="/js/sections.js"></script>
+    <script src="/js/search.js"></script>
+    <script src="/js/header-footer.js"></script>
+</body>
+
+</html>
