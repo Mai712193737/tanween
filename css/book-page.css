@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Tajawal:wght@200;300;400;500;700;800;900&display=swap');
+
+:root {
+    --primary-color: #3a4a6d;
+    --secondary-color: #3498db;
+    --light-color: #e0e5e6;
+    --contrast-color: orange;
+
+}
+
+body {
+    font-family: 'tajawal', Arial, Helvetica, sans-serif;
+    display: flex;
+    flex-direction: column;
+    margin: 0;
+    padding: 0;
+    height: 100vh;
+
+}
+
+section {
+    background: linear-gradient(#3a4a6d 0%, #9B7EBD 20% 80%, #3a4a6d);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    padding: 20px;
+    max-width: 800px;
+    width: 80%;
+    margin: 20px 0px;
+    background-color: var(--light-color);
+    opacity: 0.8;
+    border-radius: 16px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    text-align: center;
+}
+
+#book-title {
+    font-size: 28px;
+    font-weight: bold;
+    color: #000000;
+    margin-bottom: 10px;
+
+
+}
+
+#book-author {
+    font-size: 18px;
+    color: #880606;
+    margin-bottom: 20px;
+}
+
+#book-cover {
+    border-radius: 12px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.9);
+    margin-bottom: 20px;
+}
+
+#book-description {
+    font-size: 16px;
+    line-height: 1.8;
+    color: #243e64;
+}
+
+.favorite,
+.more {
+    font-family: inherit;
+    font-size: 1rem;
+    font-weight: bold;
+    background-color: #9B7EBD;
+    margin: 20px;
+    color: white;
+    border: none;
+    outline: 5px solid transparent;
+    border-radius: 5px ;
+    padding: 10px 20px;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.favorite:hover,
+.more:hover {
+    outline-color: #7F55B1;
+}
+
+.favorite:active,
+.more:active {
+    opacity: 0.75;
+}
+
+.more span {
+    color: var(--contrast-color);
+}

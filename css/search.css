@@ -1,0 +1,89 @@
+:root {
+    --primary-color: #2c3e50;
+    --secondary-color: #3498db;
+    --light-color: #ecf0f1;
+    --dark-color: #2c3e50;
+}
+
+.search-results {
+    display: none;
+    position: absolute;
+    width: 100%;
+    background: white;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    z-index: 100;
+    max-height: 70vh;
+    overflow-y: auto;
+    margin-top: 5px;
+}
+
+.search-result-card {
+    display: flex;
+    padding: 15px;
+    border-bottom: 1px solid #ddd;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.search-result-card:hover {
+    background-color: #eee;
+}
+
+.search-result-cover {
+    width: 60px;
+    height: 90px;
+    object-fit: cover;
+    margin-left: 15px;
+    border-radius: 3px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+}
+
+.search-result-info {
+    flex: 1;
+    min-width: 0;
+}
+
+.search-result-title {
+    font-weight: bold;
+    margin: 0 0 5px 0;
+    color: black;
+    font-size: 18px;
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.search-result-author {
+    font-size: 16px;
+    color: black;
+    margin: 0 0 8px 0;
+}
+
+.search-result-description {
+    font-size: 13px;
+    color: black;
+    margin: 0;
+    line-height: 1.4;
+}
+
+.show-more-btn {
+    background: none;
+    border: none;
+    color: var(--secondary-color);
+    font-size: 12px;
+    cursor: pointer;
+    padding: 2px 0;
+    margin-top: 5px;
+}
+
+.show-more-btn:hover {
+    text-decoration: underline;
+}
+
+.no-results {
+    padding: 15px;
+    text-align: center;
+    color: #666;
+}
